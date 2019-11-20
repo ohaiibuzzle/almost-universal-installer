@@ -5,7 +5,7 @@ Python script for automagically handling package installation in Arch Linux, Deb
 
 - Download the script, toss it somewhere, `import uni_install`. Dead simple!
 
-# What is does:
+# What it does:
 
 There're a few notable functions:
 - `getOS()`: Returns the ID of the **distro** or **base distro**, depending on `ID` or `ID_LIKE` in **/etc/os-release**
