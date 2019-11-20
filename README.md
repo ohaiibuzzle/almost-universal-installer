@@ -16,6 +16,6 @@ There's a few notable functions:
 - `gitBuild()`: `git clone`, `make` and `sudo make install` a git link
 - `chkBuildEnvArch()`: Check if `makepkg` and `git` is present for AUR builds
 - `setupBuildEnvArch()`: Setup build utils for AUR builds
-- `chkBuildEnvGit()`: Check if `git` is present for git source builds
+- `chkBuildEnvGit()`: Check if `git`, `make` and build dependencies are present for git source builds
 - `setupBuildEnvGit()`: Setup build utils for git source builds
 - `netTest()`: Make a quick request to a server and report if it succeded or fails
