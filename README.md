@@ -7,7 +7,7 @@ Python script for automagically handling package installation in Arch Linux, Deb
 
 # What is does:
 
-There's a few notable functions:
+There're a few notable functions:
 - `getOS()`: Returns the ID of the **distro** or **base distro**, depending on `ID` or `ID_LIKE` in **/etc/os-release**
 - `systemInstall()`: Install packages from a **Python list**, using the distro got from `getOS()`
 - `systemUpdate()`: Same as `systemInstall()`, except for updating the system
@@ -19,3 +19,7 @@ There's a few notable functions:
 - `chkBuildEnvGit()`: Check if `git`, `make` and build dependencies are present for git source builds
 - `setupBuildEnvGit()`: Setup build utils for git source builds
 - `netTest()`: Make a quick request to a server and report if it succeded or fails
+
+# Things to watch out!
+
+-  This script can only install the bare minimum for building Git packages. Packages that have other/optional dependencies must be installed with `systemInstall()`. `gitBuild()` won't try to install dependencies for you
