@@ -95,6 +95,7 @@ def setupBuildEnvGit():
         list_pkg.append('build-essential')
     elif os == 'fedora':
         list_pkg.append('@development-tools')
+        list_pkg.append('g++')
     elif os == 'arch':
         list_pkg.append('base-devel')
     systemInstall(list_pkg) #Install git
